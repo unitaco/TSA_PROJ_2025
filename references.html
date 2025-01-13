@@ -14,15 +14,28 @@
 <body style="text-align: center;">
    <header style="position: sticky; top: 8px; z-index: 2;">
        <img src=websiteassets/logo_kneesocks.png height="75" width="75" style="float:left">
-       <nav>
-           <a href="#titlepage">Home</a>
-           <a href="#sources">Sources</a>
-           <a href="#media">Media</a>
-           <a href="index.html">
-               <button class="styled3" style="border-radius: 10px; min-height: 35px; min-width: 100px;">Restaurant
-               </button>
-           </a>
-       </nav>
+       <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#titlepage" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sources" class="nav-link">Sources</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#media" class="nav-link">Media</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html"><button class="styled3" style="border-radius: 10px; min-height: 35px; min-width: 100px;">Restaurant</button></a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
    </header>
     <main>
         <section id="titlepage" style="scroll-margin-top: 100px;">
@@ -61,5 +74,7 @@
     <footer>
         <p>&copy; 2024 The Grove. All rights reserved.</p>
         <p>Follow us on social media for daily specials and updates</p>
+
     </footer>
+    <script src="script.js"></script>
 </body>

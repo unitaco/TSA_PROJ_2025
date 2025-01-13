@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="styles.css">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
     <title>The Grove</title>
     <style>
         
@@ -12,12 +12,29 @@
 <body>
     <header>
         <img src=websiteassets/logo_kneesocks.png height="75" width="75" style="float:left">
-        <nav>
-            <a href="#largeimg">Home</a>
-            <a href="#menu">Menu</a>
-            <a href="#contact">Contact</a>
-            <a href="references.html">References</a>
-            <a href="#about">About Us</a>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#largeimg" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="references.html" class="nav-link">References</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
 
@@ -131,11 +148,11 @@
             <p>Happy Hour: 5:00 PM - 6:00 PM
             <p>Closed Sundays</p>
         </section>
-
     </main>
 
     <footer>
         <p>&copy; 2025 The Grove. All rights reserved.</p>
         <p>Follow us on social media for daily specials and updates</p>
     </footer>
+    <script src="script.js"></script>
 </body>

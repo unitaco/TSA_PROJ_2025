@@ -14,6 +14,10 @@ header {
     align-items: center;
     justify-content: space-between;
     text-wrap: nowrap;
+    position: sticky;
+    top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 span {
@@ -22,22 +26,11 @@ span {
 
 }
 
-nav {
-    padding: 15px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    background-color: #607744;
-    border-radius: 5px;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
 }
 
 main {
@@ -113,6 +106,7 @@ footer {
     nav a {
         display: block;
         margin: 5px 0;
+        color: #f5f5f5
     }
 }
 
@@ -126,7 +120,7 @@ footer {
 .introimg {
     margin-top: -20px;
     margin-left: -450px;
-    width: 100vw;
+    width: 125vw;
     height: 105vh;
     margin-bottom: 50px;
 }
@@ -200,6 +194,7 @@ hr {
     background-color: #475733;
     border: 2px solid #f5f5f5;
     color: #f5f5f5;
+    align-self: center;
 }
 
 .styled3:hover {
@@ -234,3 +229,142 @@ hr {
     text-align: left;
     margin-left: 450px;
 }
+
+html {
+font-size: 62.5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hamburger {
+display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3 ease-in-out;
+    transition: all 0.3 ease-in-out;
+    background-color: #101010;
+}
+
+.nav-item {
+margin-left: 30px;  /* Remove any default margin to prevent squishing */
+    padding: 0;  /* Remove any padding that might add extra space */
+    flex-grow: 1;  /* Allow each item to take up equal space */
+    text-align: center;  /* Center the text in each nav item */
+}
+
+.nav-link{
+font-weight: 400;
+color: #f5f5f5;
+display: block;  /* Ensure the link is a block element to take full width of nav item */
+padding: 15px;
+}
+
+.nav-menu{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+text-align: center;
+width: 100%
+padding: 0 2rem;
+align-items: center;
+}
+
+nav {
+   padding: 15px;
+   text-align: center;
+}
+
+
+nav a:hover {
+   background-color: #607744;
+   border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+.nav-menu {
+position: fixed;
+left: -100%;
+top: 5rem;
+flex-direction: row;
+background-color: #fff;
+width: 100%;
+border-radius: 10px;
+text-align: center;
+transition: 0.3s;
+box-shadow:
+0 10px 27px rgba(0, 0, 0, 0.05);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+.nav-item {
+    margin: 2.5rem 0;
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+.nav-item {
+    margin: 2.5rem 0;
+}
+
+.nav-link{
+font-weight: 400;
+color: #475733;
+display: block;  /* Ensure the link is a block element to take full width of nav item */
+padding: 15px;
+}
+
+.nav-link:hover{
+background-color: #f5f5f5;
+}
+
+.styled3 {
+background-color: #ffffff;
+color: #475733;
+}
+
+nav a:hover {
+background-color: #f5f5f5
+}
+}
+
+
+
